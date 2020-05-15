@@ -1,0 +1,291 @@
+body {
+  font-size: 20px;
+  background-color: white;
+  color: #2b272f;
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+}
+/*NavBar style that works for both the Nav-bar on top and the Nav-bar at the bottom*/
+.nav {
+  padding: 2px 7%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 200;
+}
+.nav #logo,.nav #logo1 {
+  margin: auto auto auto 0;
+}
+.nav .list,.nav .listIcon { /*ListIcon is the footer Icon*/
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: auto 0;
+}
+.nav .listIcon img, .nav .list li {
+  cursor: pointer;
+  list-style: none;
+  padding: 10px;
+  margin: 10px 0 10px 13px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/*Patterns styling*/
+.pattern {
+  position: absolute;
+  z-index: 1;
+  width: 26%;
+}
+
+.pt-right {
+  right: 0;
+  top: -30px;
+}
+
+.pt1-right {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 45%;
+  z-index: 1;
+}
+.pt-left {
+  width: 10%;
+  left: 0;
+  bottom: -40%;
+}
+
+.pt1-left {
+  left: 0;
+  top: 0;
+  width: 30%;
+}
+
+/*General buttons styles*/
+button {
+  cursor: pointer;
+  padding: 10px 35px;
+  text-transform: uppercase;
+  border: 1px solid white;
+  background-color: inherit;
+  color: white;
+  font-family: 'Karla', sans-serif;
+  letter-spacing: 2px;
+  font-size: 19px;
+}
+button:hover {
+  background-color: white;
+  font-weight: 700;
+  color: #2d2640;
+}
+
+/*Header styling for the landing text and image*/
+header {
+  background-color: #2d2640;
+}
+header nav {
+  background-color: white;
+}
+header li:hover {
+  color: white;
+  background-color: #2d2640;
+}
+header .holder {
+  padding: 0 7%;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  position: relative;
+}
+header .holder .header-text {
+  width: 50%;
+  margin: auto;
+  z-index: 40;
+}
+header .holder .header-text h1 {
+  font-size: 6vw;
+  line-height: 1;
+  margin: 10px 0;
+}
+header .holder div {
+  width: 50%;
+}
+header .holder div img {
+  width: 100%;
+  margin: 70px 0 -150px;
+}
+
+/*Styling the main content of the Page*/
+main {
+  padding: 20% 7% 2% 7%;
+}
+main h2 {
+  font-size: 4vw;
+}
+main .flex-snap {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+  text-align: left;
+  margin: 7% auto;
+}
+main .flex-snap section {
+  width: 30%;
+  margin: 10px auto;
+}
+main .flex-snap section h4 {
+  margin: 20px 0;
+}
+main .find-out-more {
+  background-color: #2d2640;
+  color: white;
+  padding: 5.5%;
+  position: relative;
+  z-index: 20;
+  margin: 70px auto;
+}
+main .find-out-more h2 {
+  font-size: 4.5vw;
+  width: 53%;
+  line-height: 1;
+  display: inline-block;
+  margin: 0;
+}
+main .find-out-more button {
+  float: right;
+  margin: 3.5% 0;
+  position: relative;
+  z-index: 6;
+}
+
+
+/*Footer part of the page including the icons and the external links*/
+footer {
+  background-color: #fafafa;
+  position: relative;
+  z-index: 30;
+}
+/*The Nav Bar with the social media links*/
+footer .nav {
+  padding: 0;
+  margin: 2px 7%;
+  border-bottom: 2px solid #d4d4d4;
+}
+footer .list img:hover {
+  color: #2d2640;
+}
+/*Headers of the external links*/
+footer h6 {
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 400;
+  color: #837d87;
+  margin: 22px 0;
+}
+/*External links*/
+footer .ftr-links {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10% 0 5%;
+}
+footer .ftr-links div {
+  width: 20%;
+  margin: 0 auto;
+}
+footer .ftr-links div ul {
+  padding: 0;
+}
+footer .ftr-links div ul li {
+  list-style: none;
+  text-transform: uppercase;
+  line-height: 1.5;
+  position: relative;
+  z-index: 30;
+}
+
+.displayN,.hamburger{
+  display: none;
+}
+
+
+
+/*Making the site responsive*/
+@media screen and (max-width: 550px) {
+ .displayN {
+    display: block;
+    width: 100%;
+  }
+  .hamburger{
+    display: inline-block;
+    height: fit-content;
+    margin: auto 0;
+    cursor: pointer;
+}
+
+  body{
+    text-align: center;
+  }
+/*Header*/
+  .images,.nav .list,.pt-left {
+    display: none;
+  }
+  header .holder .header-text {
+    width: 100%;
+    margin: 20% 5%;
+  }
+  header .holder .header-text h1 {
+    font-size: 46px;
+  }
+  .nav #logo{
+    margin: 7% auto 7% 0;
+  }
+
+
+
+  /*Main*/
+  main h2 {
+    font-size: 36px;
+  }
+  main .flex-snap section h4 {
+    font-size: 29px;
+  }
+  main .flex-snap section {
+    text-align: center;
+    width: 100%;
+  }
+
+  main .find-out-more h2{
+    width: 100%;
+    font-size: 8vw;
+  }
+  main .find-out-more button {
+    float: none;
+  }
+
+  /*Footer*/
+  .nav #logo1{
+    margin: 15% auto 5% auto;
+  }
+  .nav .listIcon{
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+  footer .ftr-links {
+    display: block;
+    padding: 3%;
+  }
+  footer .ftr-links div {
+    width: 100%;
+  }
+}
